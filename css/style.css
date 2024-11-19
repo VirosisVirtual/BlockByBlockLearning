@@ -1,0 +1,552 @@
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Color Palette */
+:root {
+  --primary-color: #1E3A8A;  /* Navy Blue */
+  --secondary-color: #1E40AF; /* Slightly lighter blue */
+  --accent-color: #FBBF24;    /* Gold */
+  --text-color: #ffffff;      /* White */
+  --bg-color: #F3F4F6;        /* Light Gray */
+  --secondary-color2: #0099ff; 
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: var(--primary-color);
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 0;
+  background-color: #3fe0d0;
+  transition: width 0.3s;
+}
+
+.navbar .logo {
+  color: var(--text-color);
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 1em;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+/* Banner */
+.banner {
+  background: var(--secondary-color);
+  color: var(--text-color);
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.banner-content p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.intro-video {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1em;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Content Section */
+#home .content {
+  background-color: var(--bg-color);
+  padding: 3em 2em;
+  text-align: center;
+}
+
+#home h2 {
+  font-size: 2em;
+  color: var(--primary-color);
+  margin-bottom: 0.5em;
+}
+
+#home p {
+  font-size: 1.1em;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1.5em;
+  padding: 0.7em 1.5em;
+  background-color: var(--accent-color);
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #eab308;
+}
+
+
+
+/* Worlds Section Styles */
+.worlds-section {
+  padding: 3em 2em;
+  text-align: center;
+  background-color: var(--bg-color);
+}
+
+.worlds-section h1 {
+  font-size: 2.5em;
+  color: var(--primary-color);
+  margin-bottom: 0.5em;
+}
+
+.worlds-section p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 2em;
+}
+
+.worlds-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 2em;
+  margin: 0 auto;
+  max-width: 600px; 
+}
+
+.world-card {
+  width: 100%;
+  background-color: #e0f7fa; 
+  border: 1px solid #d1d9e6; 
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5em;
+  transition: transform 0.3s;
+}
+
+
+.world-card:hover {
+  transform: scale(1.03);
+}
+
+.world-thumbnail {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.world-card h2 {
+  font-size: 1.8em;
+  color: var(--primary-color);
+  margin-bottom: 0.5em;
+}
+
+.world-card p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 1.5em;
+}
+
+.world-button {
+  display: inline-block;
+  padding: 0.7em 1.5em;
+  background-color: var(--accent-color);
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.world-button:hover {
+  background-color: #eab308;
+}
+
+.section-banner {
+  background-color: #232231;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-banner video {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section: Mission */
+.section-mission {
+  background-color: var(--secondary-color2);
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.section-mission p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
+}
+
+.mission-text {
+  flex: 1;
+  text-align: left;
+  color: #222831;
+}
+
+.mission-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.mission-image img {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section: Map */
+.section-map {
+  background-color: var(--secondary-color);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-map img {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section: Miscellaneous */
+.section-misc {
+  background-color: #f4f4f9;
+  padding: 40px 20px;
+  text-align: left;
+  justify-content: center;
+  display: flex;
+}
+
+.section-misc a.button-download {
+  display: inline-block;
+  background-color: #3fe0d0;
+  color: #0a0d1a;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.section-misc a.button-download:hover {
+  background-color: #34d2c0;
+}
+
+/* Footer */
+footer {
+  background-color: #222831;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+}
