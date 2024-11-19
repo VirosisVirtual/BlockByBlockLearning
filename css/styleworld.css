@@ -250,7 +250,7 @@ textarea {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 
 /* Color Palette */
@@ -309,181 +309,6 @@ textarea {
   color: var(--accent-color);
 }
 
-/* Banner */
-.banner {
-  background: var(--secondary-color);
-  color: var(--text-color);
-  padding: 4em 2em;
-  text-align: center;
-}
-
-.banner-content h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-}
-
-.banner-content p {
-  font-size: 1.2em;
-  margin-bottom: 1.5em;
-}
-
-.intro-video {
-  max-width: 80%;
-  height: auto;
-  border-radius: 10px;
-  margin-top: 1em;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Main Content Section */
-#home .content {
-  background-color: var(--bg-color);
-  padding: 3em 2em;
-  text-align: center;
-}
-
-#home h2 {
-  font-size: 2em;
-  color: var(--primary-color);
-  margin-bottom: 0.5em;
-}
-
-#home p {
-  font-size: 1.1em;
-  color: #333;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.button {
-  display: inline-block;
-  margin-top: 1.5em;
-  padding: 0.7em 1.5em;
-  background-color: var(--accent-color);
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.button:hover {
-  background-color: #eab308;
-}
-
-
-
-/* Worlds Section Styles */
-.worlds-section {
-  padding: 3em 2em;
-  text-align: center;
-  background-color: var(--bg-color);
-}
-
-.worlds-section h1 {
-  font-size: 2.5em;
-  color: var(--primary-color);
-  margin-bottom: 0.5em;
-}
-
-.worlds-section p {
-  font-size: 1.2em;
-  color: #555;
-  margin-bottom: 2em;
-}
-
-.worlds-container {
-  display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  gap: 2em;
-  margin: 0 auto;
-  max-width: 600px; 
-}
-
-.world-card {
-  width: 100%;
-  background-color: #e0f7fa; 
-  border: 1px solid #d1d9e6; 
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1.5em;
-  transition: transform 0.3s;
-}
-
-
-.world-card:hover {
-  transform: scale(1.03);
-}
-
-.world-thumbnail {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1em;
-}
-
-.world-card h2 {
-  font-size: 1.8em;
-  color: var(--primary-color);
-  margin-bottom: 0.5em;
-}
-
-.world-card p {
-  font-size: 1em;
-  color: #666;
-  margin-bottom: 1.5em;
-}
-
-.world-button {
-  display: inline-block;
-  padding: 0.7em 1.5em;
-  background-color: var(--accent-color);
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.world-button:hover {
-  background-color: #eab308;
-}
-
-.section-banner {
-  background-color: #232231;
-  color: #ffffff;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.section-banner video {
-  margin-top: 20px;
-  width: 100%;
-  max-width: 700px;
-  border-radius: 8px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Section: Mission */
-.section-mission {
-  background-color: var(--secondary-color2);
-  padding: 40px 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.section-mission p {
-  max-width: 700px;
-  margin: 0 auto;
-}
-.container {
-  display: flex;
-  align-items: center;
-  max-width: 1200px;
-  width: 100%;
-  gap: 20px;
-}
-
 /* Footer */
 footer {
   background-color: #222831;
@@ -491,3 +316,127 @@ footer {
   text-align: center;
   padding: 15px 0;
 }
+
+/* Intro Section */
+.section-intro {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #0099ff;
+}
+
+.intro-video {
+  width: 80%;
+  max-width: 800px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Mission Section */
+.section-mission {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #e9f5ff;
+}
+
+.mission-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
+}
+
+.mission-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* Map Section */
+.section-map {
+  text-align: center;
+  padding: 40px 10px;
+  background-color: #0099ff;
+}
+
+.image-standard {
+  flex: 1;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-map {
+  flex: 1;
+  max-width: 1400px;
+  width: 100%;
+}
+
+/* Misc Section */
+.section-misc {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #e9f5ff;
+}
+
+.misc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 800px;
+  width: 100%;
+}
+
+.misc-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.misc-container li{
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.section-download {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #0099ff; /* Slightly different color to make it stand out */
+  color: #f8fafc; /* Text color for readability */
+  margin-top: 20px;
+}
+
+.section-download h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section-download p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: #1e40af; /* Accent color for the button */
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.download-button:hover {
+  background-color: #2563eb; /* Lighter blue on hover */
+  transform: scale(1.05); /* Subtle zoom effect */
+}
+
+.download-button:active {
+  background-color: #1d4ed8; /* Slightly darker blue for active state */
+  transform: scale(0.98); /* Slight press effect */
+}
+
