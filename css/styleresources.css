@@ -259,7 +259,7 @@ textarea {
   --secondary-color: #1E40AF; /* Slightly lighter blue */
   --accent-color: #FBBF24;    /* Gold */
   --text-color: #ffffff;      /* White */
-  --bg-color: #ffc18f;        /* Light Gray */
+  --text-color2: #dadada;      /* Light Gray */
   --secondary-color2: #0099ff; 
 }
 
@@ -303,145 +303,71 @@ textarea {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
-  position: relative
 }
 
 .nav-links a:hover {
   color: var(--accent-color);
 }
 
-/* Intro Section */
-.section-intro {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #d47800;
-}
-
-.intro-video {
-  width: 100%;
-  max-width: 1200px;
-  margin-top: 20px;
-}
-
-/* Mission Section */
-.section-mission {
-  padding: 40px 2.5in;
-  display: flex;
-  justify-content: center;
-  background-color: var(--bg-color);
-}
-
-.mission-container {
+.container {
   display: flex;
   align-items: center;
   max-width: 1200px;
   width: 100%;
   gap: 5%;
+  padding-top: .5in;
+  padding-bottom: .5in;
 }
 
-.mission-text {
-  text-align: left;
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-/* Map Section */
-.section-map {
-  text-align: center;
-  padding: 40px 10px;
-  background-color: #d47800;
-}
-
-.image-standard {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.image-map {
-  flex: 1;
-  width: 100%;
-  max-width: 1200px;
-}
-
-/* Misc Section */
-.section-misc {
-  padding: 40px 20px;
-  display: flex;
-  justify-content: center;
-  background-color: var(--bg-color);
-}
-
-.misc-container {
+.header {
   display: flex;
   align-items: center;
   max-width: 1200px;
   width: 100%;
-  gap: 5%;
-}
-
-.misc-container h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.misc-container li{
-  font-size: 20px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.section-download {
-  padding: 40px 20px;
+  padding-bottom: .5in;
+  flex-direction: column;
+  color: var(--text-color2);
   text-align: center;
-  background-color: #d47800;/* Slightly different color to make it stand out */
+  font-size: 20px;
+  background-color: var(--secondary-color);
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.section-download h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.section-download p {
-  font-size: 1.2rem;
-}
-
-.download-button {
-  display: inline-block;
-  padding: 20px 100px;
-  font-size: 2rem;
+/* Footer */
+footer {
+  background-color: #222831;
   color: #ffffff;
-  background-color: #1e40af; /* Accent color for the button */
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background-color 0.3s, transform 0.2s;
+  text-align: center;
+  padding: 15px 0;
 }
 
-.download-button:hover {
-  background-color: #2563eb; /* Lighter blue on hover */
-  transform: scale(1.05); /* Subtle zoom effect */
+.mods {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color2);
+  align-items: center;
+  flex-direction: column;
 }
 
-.download-button:active {
-  background-color: #1d4ed8; /* Slightly darker blue for active state */
-  transform: scale(0.98); /* Slight press effect */
+img {
+  max-width: 400px;
+  width: 100%;
+
+}
+
+.background {
+  color: var(--text-color2);
+  line-height: 2;
+  font-size: 20px;
+  background-color: var(--secondary-color);
+  padding: 20px 40px;
 }
 
 h1 {
-  color: #d47800;
-  background-color: var(--bg-color);
-  padding: 15px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 10px auto;
-  font-weight: bold;
-  font-size: 2rem;
-}
-
-h2 {
-  color: var(--bg-color);
-  background-color: #d47800;
+  color: var(--text-color2);
+  background-color: var(--secondary-color);
   padding: 15px;
   width: 100%;
   max-width: 1200px;
@@ -451,6 +377,3 @@ h2 {
   text-align: center;
 }
 
-b {
-  color: #d47800;
-}
