@@ -307,6 +307,10 @@ textarea {
 }
 
 .nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-links a:active {
   color: var(--accent-color);
 }
 
@@ -415,17 +419,14 @@ textarea {
   border: none;
   border-radius: 8px;
   text-decoration: none;
-  transition: background-color 0.3s, transform 0.2s;
 }
 
 .download-button:hover {
-  background-color: #2563eb; /* Lighter blue on hover */
-  transform: scale(1.05); /* Subtle zoom effect */
+  text-decoration: underline;
 }
 
 .download-button:active {
-  background-color: #1d4ed8; /* Slightly darker blue for active state */
-  transform: scale(0.98); /* Slight press effect */
+  background-color: #133286; /* Slightly darker blue for active state */
 }
 
 h1 {

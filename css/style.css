@@ -306,6 +306,10 @@ textarea {
 }
 
 .nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-links a:active {
   color: var(--accent-color);
 }
 
@@ -426,10 +430,13 @@ textarea {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
-  transition: background-color 0.3s;
 }
 
 .world-button:hover {
+  text-decoration: underline;
+}
+
+.world-button:active {
   background-color: #eab308;
 }
 

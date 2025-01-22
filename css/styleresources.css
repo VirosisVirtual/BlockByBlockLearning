@@ -306,6 +306,10 @@ textarea {
 }
 
 .nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-links a:active {
   color: var(--accent-color);
 }
 
@@ -315,8 +319,17 @@ textarea {
   max-width: 1200px;
   width: 100%;
   gap: 5%;
+  padding: 2%;
+  background-color:#222831;
+}
+
+.container2 {
+  align-items: left;
+  max-width: 1200px;
+  width: 100%;
   padding-top: .5in;
   padding-bottom: .5in;
+  line-height: 2;
 }
 
 .header {
@@ -343,6 +356,15 @@ footer {
 }
 
 .mods {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color2);
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro {
   padding: 40px 20px;
   display: flex;
   justify-content: center;
@@ -361,12 +383,11 @@ img {
   color: var(--text-color2);
   line-height: 2;
   font-size: 20px;
-  background-color: var(--secondary-color);
-  padding: 20px 40px;
+  padding: 2%;
 }
 
 h1 {
-  color: var(--text-color2);
+  color: var(--accent-color);
   background-color: var(--secondary-color);
   padding: 15px;
   width: 100%;
@@ -377,3 +398,20 @@ h1 {
   text-align: center;
 }
 
+button {
+  display: inline-block;
+  padding: 0.7em 1.5em;
+  background-color:#ca9802;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  border: #0099ff;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+button:active {
+  background-color: #a77d00;
+}
