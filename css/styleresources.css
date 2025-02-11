@@ -245,12 +245,16 @@ textarea {
   }
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url(/Montserrat-VariableFont_wght.ttf);
+}
 /* Basic Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat";
 }
 
 /* Color Palette */
@@ -270,6 +274,7 @@ textarea {
   align-items: center;
   padding: 1em 2em;
   background-color: var(--primary-color);
+  font-family: Arial, sans-serif;
 }
 
 .nav-links li a::after {
@@ -323,13 +328,28 @@ textarea {
   background-color:#222831;
 }
 
-.container2 {
+.container2a {
   align-items: left;
   max-width: 1200px;
   width: 100%;
-  padding-top: .5in;
-  padding-bottom: .5in;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
   line-height: 2;
+  background-color: #63bffc;
+}
+
+.container2b {
+  align-items: left;
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  line-height: 2;
+  background-color: var(--secondary-color2);
 }
 
 .header {
@@ -359,9 +379,10 @@ footer {
   padding: 2%;
   display: flex;
   justify-content: center;
-  background-color: var(--secondary-color2);
+  background-color: var(--secondary-color);
   align-items: center;
   flex-direction: column;
+
 }
 
 .intro {
@@ -373,11 +394,11 @@ footer {
   flex-direction: column;
 }
 
-img {
+.body {
   max-width: 400px;
   width: 100%;
-
 }
+
 
 .background {
   color: var(--text-color2);
@@ -396,6 +417,10 @@ h1 {
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
+}
+
+h2 {
+  
 }
 
 button {

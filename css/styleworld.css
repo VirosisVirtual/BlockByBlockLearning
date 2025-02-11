@@ -15,6 +15,8 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  background: rgb(120,235,227);
+  background: linear-gradient(180deg, rgba(120,235,227,1) 0%, rgba(214,214,214,1) 100%); 
 }
 
 /*
@@ -245,12 +247,17 @@ textarea {
   }
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url(/Montserrat-VariableFont_wght.ttf);
+}
 /* Basic Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat";
+  font-weight: 500;
 }
 
 /* Color Palette */
@@ -319,6 +326,7 @@ textarea {
   text-align: center;
   padding: 40px 20px;
   background-color: #0099ff;
+  margin: 0 10%;
 }
 
 .intro-video {
@@ -329,10 +337,11 @@ textarea {
 
 /* Mission Section */
 .section-mission {
-  padding: 40px 2.5in;
+  padding: 40px 20px;
   display: flex;
   justify-content: center;
   background-color: var(--bg-color);
+  margin: 0 10%;
 }
 
 .mission-container {
@@ -354,6 +363,7 @@ textarea {
   text-align: center;
   padding: 40px 10px;
   background-color: #0099ff;
+  margin: 0 10%;
 }
 
 .image-standard {
@@ -374,6 +384,7 @@ textarea {
   display: flex;
   justify-content: center;
   background-color: var(--bg-color);
+  margin: 0 10%;
 }
 
 .misc-container {
@@ -398,7 +409,8 @@ textarea {
 .section-download {
   padding: 40px 20px;
   text-align: center;
-  background-color: #0099ff; /* Slightly different color to make it stand out */
+  background-color: #0099ff; 
+  margin: 0 10%;
 }
 
 .section-download h2 {
@@ -454,4 +466,9 @@ h2 {
 
 b {
   color: var(--primary-color);
+  font-weight: 650;
+}
+
+ul {
+  max-width: 1600px;
 }
