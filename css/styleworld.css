@@ -249,7 +249,7 @@ textarea {
 
 @font-face {
   font-family: "Montserrat";
-  src: url(/Montserrat-VariableFont_wght.ttf);
+  src: url(/font/Montserrat-VariableFont_wght.ttf);
 }
 /* Basic Reset */
 * {
