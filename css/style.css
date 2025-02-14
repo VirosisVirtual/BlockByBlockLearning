@@ -10,6 +10,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
   color: #222;
@@ -248,7 +249,6 @@ textarea {
 @font-face {
   font-family: "Montserrat";
   src: url(../font/Montserrat-VariableFont_wght.ttf);
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 }
 /* Basic Reset */
 * {
