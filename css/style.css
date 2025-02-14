@@ -246,9 +246,6 @@ textarea {
   }
 }
 
-@font-face {
-  font-family: "Montserrat";
-}
 /* Basic Reset */
 * {
   margin: 0;
