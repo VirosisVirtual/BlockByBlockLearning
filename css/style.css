@@ -56,7 +56,9 @@ hr {
 
 audio,
 canvas,
-iframe,
+iframe {
+     width: 100%;
+}
 img,
 svg,
 video {
