@@ -40,28 +40,69 @@
 <header class="banner">
   <div class="banner-content">
     <h1>Welcome to Block-by-Block Learning</h1>
-    <p>Engaging students in learning through immersive Minecraft worlds</p>
-    <video controls class="intro-video">
-      <source src="intro-video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+   <iframe width="1280" height="720" src="https://player.vimeo.com/video/1064073545?h=83dff87648&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Block-by-Block Learning"></iframe>
   </div>
 </header>
 
-<!-- Main Content (can add more sections as needed) -->
-<section id="home">
-  <div class="content">
-    <h2>What is Block-By-Block Learning?</h2>
-    <p>Block-by-Block Learning is an innovative educational project that leverages Minecraft to inspire creativity and critical 
-      thinking in students from grades K-12+. Designed to align with science-based standards, this initiative offers a collection
-      of immersive, story-driven missions set within uniquely crafted worlds.
-      Each world provides a distinct environment filled with challenges that encourage students to explore, problem-solve, 
-      and collaborate. Block-by-Block Learning transforms education into an interactive and 
-      dynamic experience, empowering learners to connect their creativity with real-world problem-solving.</p>
+<section id="about">
+  <div class="about-container">
+    <h2 class="section-title">What is Block by Block Learning?</h2>
+    <div class="divider"></div>
+    <p class="about-text">
+      Block-by-Block Learning is an innovative educational project that leverages Minecraft to inspire creativity and critical thinking in students from grades K-12+.
+      Designed to align with science-based standards, this initiative offers a collection of immersive, story-driven missions set within uniquely crafted worlds.    </p>
+    
+    <div class="about-grid">
+      <div class="about-item">
+        <h3>🔹 Hands-On Learning</h3>
+        <p>Scenario-based missions that challenge students to design and adapt within varying environments.</p>
+      </div>
+      
+      <div class="about-item">
+        <h3>🔹 Problem Solving Skills</h3>
+        <p>Students should be able to explain their building process and what steps they took to create their final creations. </p>
+      </div>
+
+      <div class="about-item">
+        <h3>🔹 Flexible Curriculum </h3>
+        <p>Teachers can freely customize the project's goals and outcomes for their classes to fit various subjects.</p>
+      </div>
+    </div>
   </div>
 </section>
 
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="img/himg1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/himg2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/himg3.png" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+
+
 <section id="redirect">
+  <div class="divider"></div>
   <div class="content">
     <h2>For more information, visit the Resources tab or click the button down below.</h2>
     <br>
@@ -69,6 +110,40 @@
   </div>
 </section>
 
-</body>
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>© 2025 Block by Block Learning. All rights reserved.</p>
+    <p>Contact: <a href="mailto:blockbyblocklearning2025@gmail.com">blockbyblocklearning2025@gmail.com</a></p>
+  </div>
+</footer>
 
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+    </script>
+  </body>
 </html>

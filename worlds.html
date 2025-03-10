@@ -17,6 +17,9 @@
   
     <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#fafafa">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
 </head>
 <body>
   <!-- Navbar -->
@@ -41,30 +44,47 @@
 
     <div class="worlds-container">
       <!-- Nivora-IV World Card -->
-      <div class="world-card1">
+      <div class="world-card1" data-aos="fade-left">
         <img src="img/worldsimg1.jpg" alt="Nivora-IV Thumbnail" class="world-thumbnail">
         <h2>S.O.S Signal: Nivora-IV</h2>
+        <div class="divider"></div>
         <p>A barren ice planet frozen in time, a faint distress signal has been traced to this remote region.</p>
+        <div class="divider"></div>
+        <h3>Climate: <span style="color: #ff0000;">Extreme</span></h3>
         <a href="nivora.html" class="world-button">Select Mission</a>
       </div>
 
       <!-- Mars World Card -->
-      <div class="world-card2">
+      <div class="world-card2" data-aos="fade-left">
         <img src="img/worldsimg2.jpg" alt="Mars Thumbnail" class="world-thumbnail">
         <h2>Colonization Program: Mars</h2>
+        <div class="divider"></div>
         <p>The 4th furthest planet from the Sun in the solar system, Mars has been chosen as the best candidate for Earth’s future colonization efforts.</p>
-        <h2>Climate: Harsh</h2>
+        <div class="divider"></div>
+        <h2><h3>Climate: <span style="color: #ffa600;">Harsh</span></h3>
         <a href="mars.html" class="world-button">Select Mission</a>
       </div>
 
       <!-- Aqualon-211W World Card -->
-      <div class="world-card3">
+      <div class="world-card3" data-aos="fade-left">
         <img src="img/world3img3.jpg" alt="Aqualon-211W Thumbnail" class="world-thumbnail">
         <h2>Project Venture: Aqualon-211W</h2>
-        <p>A massive oceanic planet with a diverse underwater ecosystem, its potential for both resources and tourism has drawn many eager corporations.</p>
+        <div class="divider"></div>
+        <p>A massive oceanic planet with a diverse underwater ecosystem, its potential has drawn many eager corporations.</p>
+        <div class="divider"></div>
+        <h2><h3>Climate: <span style="color: #e5ff00;">Temperate</span></h3>
         <a href="aqualon.html" class="world-button">Select Mission</a>
       </div>
     </div>
   </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset:200,
+        duration: 1000
+    });
+  </script>
+
 </body>
 </html>

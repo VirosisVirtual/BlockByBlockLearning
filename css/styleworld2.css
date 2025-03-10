@@ -10,7 +10,6 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
   color: #222;
@@ -58,7 +57,9 @@ hr {
 
 audio,
 canvas,
-iframe,
+iframe {
+  width: 100%;
+}
 img,
 svg,
 video {
@@ -474,4 +475,22 @@ b {
 
 ul {
   max-width: 1600px;
+}
+
+.site-footer {
+  background-color: #3a3838; 
+  color: #ffffff; 
+  text-align: center;
+  padding: 1.5% 0;
+  font-size: 18px;
+}
+
+.footer-content a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
 }
